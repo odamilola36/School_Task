@@ -9,6 +9,6 @@ public class Main {
                 new SchoolClass("JSS1"), 15, new Teacher("Alao", "Sunday",
                 new Course("Mathematics", "MTH101")));
 
-        System.out.println(student.getaClass().getClassName());
+        System.out.println(student.getFullName());
     }
 }

@@ -2,7 +2,6 @@ package staff;
 
 import commons.Course;
 import commons.Person;
-import commons.SchoolClass;
 import commons.Staff;
 import students.Student;
 
@@ -21,9 +20,10 @@ public class Teacher implements Person, Staff {
         this.role = "Teacher";
     }
 
+
     @Override
     public String getFullName() {
-        return String.format("%s\t%s", firstName, lastName.toUpperCase());
+        return String.format("%s%8s", firstName, lastName.toUpperCase());
     }
 
     @Override

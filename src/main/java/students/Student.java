@@ -4,13 +4,12 @@ import commons.Course;
 import commons.Person;
 import commons.SchoolClass;
 import staff.Teacher;
-
 import java.util.ArrayList;
 
 public class Student implements Person {
     private String firstName;
     private String lastName;
-    private SchoolClass aClass;
+    private SchoolClass aClass;//rena
     private int age;
     private Teacher classTeacher;
     private ArrayList<Course> courses;
@@ -24,7 +23,7 @@ public class Student implements Person {
         courses = new ArrayList<>();
     }
 
-    public SchoolClass getaClass() {
+    public SchoolClass getAClass() {
         return aClass;
     }
 
@@ -55,6 +54,6 @@ public class Student implements Person {
 
     @Override
     public String getFullName() {
-        return String.format("%s\t%s", firstName, lastName.toUpperCase());
+        return String.format("%s%8s", firstName, lastName.toUpperCase());
     }
 }
